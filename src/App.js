@@ -34,9 +34,9 @@ export default function App() {
 
   return (
     <div className="bg-gradient-to-r from-cyan-500 to-blue-600 min-h-screen">
-      <section className="flex p-20">
-        <div className="w-1/4"></div>
-        <div className="w-1/2">
+      <section className="flex p-4 md:p-10 lg:p-20">
+        <div className="sm:invisible md:invisible lg:w-1/4"></div>
+        <div className="w-full md:w-1/2 lg:w-1/2">
           <Logo />
           <Form addItems={handleAddItems} />
 
@@ -47,7 +47,7 @@ export default function App() {
             onToggleItem={onToggleItem}
           />
         </div>
-        <div className="w-1/4"></div>
+        <div className="sm:invisible md:invisible lg:w-1/4"></div>
       </section>
     </div>
   );

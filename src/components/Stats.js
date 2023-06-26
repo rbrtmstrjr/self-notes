@@ -5,7 +5,7 @@ export default function Stats({ items }) {
   const checkNumber = isNaN(percentage) ? "0" : percentage;
 
   return (
-    <div className="w-1/4 bg-white bg-opacity-20 rounded-xl p-6">
+    <div className="w-full md:w-1/4 bg-white bg-opacity-20 rounded-xl p-6">
       <h2 className="text-3xl text-white font-bold">{statCount}</h2>
       <p className="text-white">Items added on your list</p>
       <hr className="my-3 text-white" />
