@@ -2,7 +2,6 @@ import { useState } from "react";
 import Logo from "./components/Logo";
 import Form from "./components/Form";
 import PackingList from "./components/PackingList";
-import Stats from "./components/Stats";
 
 // const initialItems = [
 //   { id: 1, description: "Passports", quantity: 2, packed: false },
@@ -34,16 +33,22 @@ export default function App() {
   }
 
   return (
-    <div className="app">
-      <Logo />
-      <Form addItems={handleAddItems} />
-      <PackingList
-        clearItems={clearItems}
-        items={items}
-        onDeleteItems={onDeleteItems}
-        onToggleItem={onToggleItem}
-      />
-      <Stats items={items} />
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-600 min-h-screen">
+      <section className="flex p-20">
+        <div className="w-1/4"></div>
+        <div className="w-1/2">
+          <Logo />
+          <Form addItems={handleAddItems} />
+
+          <PackingList
+            clearItems={clearItems}
+            items={items}
+            onDeleteItems={onDeleteItems}
+            onToggleItem={onToggleItem}
+          />
+        </div>
+        <div className="w-1/4"></div>
+      </section>
     </div>
   );
 }
