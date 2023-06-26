@@ -1,3 +1,3 @@
 export default function Logo() {
-  return <h1>Yow</h1>;
+  return <h1>Self Notes</h1>;
 }
