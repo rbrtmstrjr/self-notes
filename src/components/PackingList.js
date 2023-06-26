@@ -26,7 +26,7 @@ export default function PackingList({
   return (
     <>
       <div className="flex flex-col md:flex-row gap-3 mt-4">
-        <ul className="w-full md:w-3/4 bg-white bg-opacity-20 rounded-xl p-6 flex flex-col md:flex-row gap-2 flex-wrap">
+        <ul className="w-full md:w-3/4 bg-white bg-opacity-20 rounded-xl p-6 flex gap-2 flex-wrap">
           {sortedItems.map((item) => (
             <Item
               item={item}
